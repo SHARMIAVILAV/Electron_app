@@ -1,0 +1,25 @@
+
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "gypfile": "true",
+  "scripts": {
+    "start": "electron .",
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean"
+  },
+   
+  "author": "Sharmi Avila V",
+  "license": "ISC",
+  "dependencies": {
+    "node-addon-api": "^7.1.0"
+  },
+  "devDependencies": {
+    "electron": "^28.1.4",
+    "node-gyp": "^9.4.1",
+    "electron-rebuild": "^2.3.5",
+    "libxmljs": "^0.19.7"
+  }
+}

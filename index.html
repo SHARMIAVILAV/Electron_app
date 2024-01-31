@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenCV Algorithm Visualization</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="column" id="inputColumn">
+    <label for="imageInput"><h2>Choose an input image:</h2></label>
+    <input type="file" id="imageInput" accept="image/*">
+    <div id="inputImageContainer"></div>
+  </div>
+
+  <div class="column" id="outputColumn">
+    <h2>Output Image</h2>
+    <div id="outputContainer"></div>
+  </div>
+
+  <!-- <div class="column" id="functionColumn">
+    <h2>Choose Function</h2>
+    <label for="functionSelect">Select a function:</label>
+    <button onclick="processImage()">THE</button>
+    <button onclick="BBHE_function()">BBHE</button>
+    <button onclick="DSIHE_function()">DSIHE</button>
+
+  </div> -->
+  <div class="column" id="functionColumn">
+    <h2>Please choose a Function to apply</h2>
+    <select id="functionSelect" onchange="selectFunction()">
+      <option value="default" selected disabled>Histogram Equalization functions</option>
+      <option value="processImage">THE</option>
+      <option value="BBHE_function">BBHE</option>
+      <option value="DSIHE_function">DSIHE</option>
+    </select>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html> 
+    <!-- <select id="functionSelect">
+      <option value="THE">Histogram Equalization Functions</option>
+      <option value="BBHE">BBHE</option>
+      <option value="DSIHE">DSIHE</option>
+    </select> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenCV Algorithm Visualization</title>
+</head>
+<body>
+  <label for="imageInput"><h3>Choose an input image:</h3></label>
+  <input type="file" id="imageInput" accept="image/*">
+  <button onclick="processImage()">Process Image</button>
+  <div id="outputContainer"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html> -->

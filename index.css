@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://i0.wp.com/wpsites.net/wp-content/uploads/2013/01/bg.png?ssl=1");
+    background-color: #cccccc;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    border: 10px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #inputColumn, #functionColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #inputImageContainer {
+    margin-top: 10px;
+  }
+  
+  #outputImageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+  }
+  /* body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#inputColumn,
+#functionColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    width: 100px; /* Set the width to your desired size */
+    /* height: 100px; /* Set the height to your desired size */
+    /* overflow: hidden; /* Hide the overflow if the image is larger than the container
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#inputImageContainer,
+#outputContainer {
+    margin-top: 10px;
+}
+
+#outputImageContainer img {
+    width: 50%; /* Make the image fill the container width 
+    height: auto; /* Maintain the aspect ratio
+    display: block; /* Remove extra spacing below inline images
+} */
+
